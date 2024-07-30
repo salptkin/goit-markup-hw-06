@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-<body>
+  <body>
     <header class="header"> <!-- HEADER BAŞLANGIÇ-->
       <div class="header-div container">
         <nav class="home-nav">
@@ -51,9 +51,9 @@
             </li>
           </ul>
         </address>
-            <div id="hamburger" class="hamburger-bar">
-                <img class="hamburger-bar-image" src="./images/icons.svg#icon-hamburger-menu" alt="">
-            </div>
+        <div id="hamburger" class="hamburger-bar">
+          <img class="hamburger-bar-img" src="./images/icons.svg#icon-hamburger-menu"></img>
+        </div>
       </div>
     </header>
     <!-- HEADER BİTİŞ-->
@@ -62,7 +62,7 @@
       <section class="hero"> <!-- SECTION-1 BAŞLANGIÇ-->
         <div class="container first-section-container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
-          <button class="button" id="order-services-button" type="button">Order Service</button>
+          <button id="modal-open-button" class="button" type="button">Order Service</button>
         </div>
       </section>
       <!-- SECTION-1 BİTİŞ-->
@@ -348,9 +348,9 @@
               <label class="footer-form-label">
                 <input
                 class="footer-form-input"
-                id="email"
                 type="email"
                 name="email"
+                id="email"
                 placeholder="E-mail"
               />
               </label>
@@ -364,9 +364,9 @@
     <!-- FOOTER BİTİŞ-->
 
     <!--MODAL BAŞLANGIÇ-->
-    <div id="modal" class="modal">
+    <div id="modal" class="modal modal-close">
       <div class="modal-window">
-        <button id="modal-button" class="modal-button" type="button">
+        <button id="modal-close-button" class="modal-button" type="button">
           <svg class="svg-modal-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -382,7 +382,7 @@
           </div>
           </div>
           <div class="modal-form-container">
-            <label class="modal-form-label" for="phone">Phone</label>
+            <label class="modal-form-label" for="phone" >Phone</label>
             <div class="modal-form-wrapper">
               <input class="modal-form-input" type="text" name="phone" id="phone">
               <svg class="modal-form-icon" width="18" height="24">
@@ -392,7 +392,7 @@
           <div class="modal-form-container">
             <label class="modal-form-label" for="email">Email</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" name="email" id="second-email">
+              <input class="modal-form-input" type="text" name="second-email" id="second-email">
               <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use></svg>
             </div>
@@ -416,8 +416,8 @@
       </div>
     </div>
 
-    <!-- RESPONSIVE MENU -->
-    <div id="is-open" class="responsive-menu">
+    <!-- Responsive Menu
+     <div id="is-open" class="responsive-menu">
         <button id="menu-button" class="modal-button" type="button">
           <svg class="svg-modal-button" width="12" height="12"><use href="./images/icons.svg#icon-close"></use></svg>
         </button>
@@ -454,6 +454,7 @@
             </div>
         </div>
     </div>
-</body>
-<script src="index.js" ></script>
+    -->
+  </body>
+  <script src="index.js" ></script>
 </html>
